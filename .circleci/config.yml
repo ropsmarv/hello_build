@@ -15,3 +15,5 @@ jobs:
       - run: echo "A more familiar hi"
 workflows:
   version: 2
+  jobs:
+    - one
