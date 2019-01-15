@@ -13,4 +13,5 @@ jobs:
     steps:
       - checkout
       - run: echo "A more familiar hi"
-
+workflows:
+  version: 2
