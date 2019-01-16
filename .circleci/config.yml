@@ -4,4 +4,5 @@ orbs:
   hello: circleci/hello-build@0.0.7
 
 jobs:
-  - hello/hello-build
+  build:
+    - hello/hello-build
