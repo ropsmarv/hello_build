@@ -1,8 +1,20 @@
 version: 2.1
 
 jobs:
-  build:
+  meep:
     docker:
       - image: circleci/node:4.8.2
     steps:
       - run: echo "Greetings, Earthlings!"
+  moop:
+    docker:
+      - image: circleci/node:4.8.2
+    steps:
+      - run: echo "We come in peace!"
+
+workflows:
+  version: 2
+  meep_moop:
+    jobs:
+      - meep
+      - moop
