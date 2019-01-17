@@ -27,7 +27,7 @@ jobs:
       - run:
           name: Running In A Container With Node
           command: |
-             node -v
+            echo "i am node"
   Now-Complete:
     docker:
       - image: alpine:3.7
